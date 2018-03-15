@@ -32,10 +32,15 @@ public class LightAnalysisModeTestGenerated extends AbstractLightAnalysisModeTes
         @TestMetadata("wrongAnnotationArgumentInCtor.kt")
         public void ignoreWrongAnnotationArgumentInCtor() throws Exception {
             String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/annotations/wrongAnnotationArgumentInCtor.kt");
+            if (KotlinTestUtils.RUN_IGNORED_TESTS_AS_REGULAR) {
+                doTest(fileName);
+                return;
+            }
             try {
                 doTest(fileName);
             }
             catch (Throwable ignore) {
+                ignore.printStackTrace();
                 return;
             }
             throw new AssertionError("Looks like this test can be unmuted. Remove IGNORE_BACKEND directive or add it to whitelist for that.");
@@ -6448,10 +6453,15 @@ public class LightAnalysisModeTestGenerated extends AbstractLightAnalysisModeTes
             @TestMetadata("inlineMultiModuleOverride.kt")
             public void ignoreInlineMultiModuleOverride() throws Exception {
                 String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/coroutines/multiModule/inlineMultiModuleOverride.kt");
+                if (KotlinTestUtils.RUN_IGNORED_TESTS_AS_REGULAR) {
+                    doTest(fileName);
+                    return;
+                }
                 try {
                     doTest(fileName);
                 }
                 catch (Throwable ignore) {
+                    ignore.printStackTrace();
                     return;
                 }
                 throw new AssertionError("Looks like this test can be unmuted. Remove IGNORE_BACKEND directive or add it to whitelist for that.");
@@ -7181,10 +7191,15 @@ public class LightAnalysisModeTestGenerated extends AbstractLightAnalysisModeTes
         @TestMetadata("implementedByFake.kt")
         public void ignoreImplementedByFake() throws Exception {
             String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/defaultArguments/implementedByFake.kt");
+            if (KotlinTestUtils.RUN_IGNORED_TESTS_AS_REGULAR) {
+                doTest(fileName);
+                return;
+            }
             try {
                 doTest(fileName);
             }
             catch (Throwable ignore) {
+                ignore.printStackTrace();
                 return;
             }
             throw new AssertionError("Looks like this test can be unmuted. Remove IGNORE_BACKEND directive or add it to whitelist for that.");
@@ -7193,10 +7208,15 @@ public class LightAnalysisModeTestGenerated extends AbstractLightAnalysisModeTes
         @TestMetadata("implementedByFake2.kt")
         public void ignoreImplementedByFake2() throws Exception {
             String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/defaultArguments/implementedByFake2.kt");
+            if (KotlinTestUtils.RUN_IGNORED_TESTS_AS_REGULAR) {
+                doTest(fileName);
+                return;
+            }
             try {
                 doTest(fileName);
             }
             catch (Throwable ignore) {
+                ignore.printStackTrace();
                 return;
             }
             throw new AssertionError("Looks like this test can be unmuted. Remove IGNORE_BACKEND directive or add it to whitelist for that.");
@@ -7205,10 +7225,15 @@ public class LightAnalysisModeTestGenerated extends AbstractLightAnalysisModeTes
         @TestMetadata("implementedByFake3.kt")
         public void ignoreImplementedByFake3() throws Exception {
             String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/defaultArguments/implementedByFake3.kt");
+            if (KotlinTestUtils.RUN_IGNORED_TESTS_AS_REGULAR) {
+                doTest(fileName);
+                return;
+            }
             try {
                 doTest(fileName);
             }
             catch (Throwable ignore) {
+                ignore.printStackTrace();
                 return;
             }
             throw new AssertionError("Looks like this test can be unmuted. Remove IGNORE_BACKEND directive or add it to whitelist for that.");
@@ -7565,10 +7590,15 @@ public class LightAnalysisModeTestGenerated extends AbstractLightAnalysisModeTes
         @TestMetadata("genericDelegateUncheckedCast2.kt")
         public void ignoreGenericDelegateUncheckedCast2() throws Exception {
             String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/delegatedProperty/genericDelegateUncheckedCast2.kt");
+            if (KotlinTestUtils.RUN_IGNORED_TESTS_AS_REGULAR) {
+                doTest(fileName);
+                return;
+            }
             try {
                 doTest(fileName);
             }
             catch (Throwable ignore) {
+                ignore.printStackTrace();
                 return;
             }
             throw new AssertionError("Looks like this test can be unmuted. Remove IGNORE_BACKEND directive or add it to whitelist for that.");
@@ -8030,10 +8060,15 @@ public class LightAnalysisModeTestGenerated extends AbstractLightAnalysisModeTes
         @TestMetadata("withDefaultParameters.kt")
         public void ignoreWithDefaultParameters() throws Exception {
             String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/delegation/withDefaultParameters.kt");
+            if (KotlinTestUtils.RUN_IGNORED_TESTS_AS_REGULAR) {
+                doTest(fileName);
+                return;
+            }
             try {
                 doTest(fileName);
             }
             catch (Throwable ignore) {
+                ignore.printStackTrace();
                 return;
             }
             throw new AssertionError("Looks like this test can be unmuted. Remove IGNORE_BACKEND directive or add it to whitelist for that.");
@@ -12131,10 +12166,15 @@ public class LightAnalysisModeTestGenerated extends AbstractLightAnalysisModeTes
         @TestMetadata("closureOfInnerLocalClass.kt")
         public void ignoreClosureOfInnerLocalClass() throws Exception {
             String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/localClasses/closureOfInnerLocalClass.kt");
+            if (KotlinTestUtils.RUN_IGNORED_TESTS_AS_REGULAR) {
+                doTest(fileName);
+                return;
+            }
             try {
                 doTest(fileName);
             }
             catch (Throwable ignore) {
+                ignore.printStackTrace();
                 return;
             }
             throw new AssertionError("Looks like this test can be unmuted. Remove IGNORE_BACKEND directive or add it to whitelist for that.");
@@ -12143,10 +12183,15 @@ public class LightAnalysisModeTestGenerated extends AbstractLightAnalysisModeTes
         @TestMetadata("closureWithSelfInstantiation.kt")
         public void ignoreClosureWithSelfInstantiation() throws Exception {
             String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/localClasses/closureWithSelfInstantiation.kt");
+            if (KotlinTestUtils.RUN_IGNORED_TESTS_AS_REGULAR) {
+                doTest(fileName);
+                return;
+            }
             try {
                 doTest(fileName);
             }
             catch (Throwable ignore) {
+                ignore.printStackTrace();
                 return;
             }
             throw new AssertionError("Looks like this test can be unmuted. Remove IGNORE_BACKEND directive or add it to whitelist for that.");
@@ -12155,10 +12200,15 @@ public class LightAnalysisModeTestGenerated extends AbstractLightAnalysisModeTes
         @TestMetadata("subclassingExtensionReceiverClass.kt")
         public void ignoreSubclassingExtensionReceiverClass() throws Exception {
             String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/localClasses/subclassingExtensionReceiverClass.kt");
+            if (KotlinTestUtils.RUN_IGNORED_TESTS_AS_REGULAR) {
+                doTest(fileName);
+                return;
+            }
             try {
                 doTest(fileName);
             }
             catch (Throwable ignore) {
+                ignore.printStackTrace();
                 return;
             }
             throw new AssertionError("Looks like this test can be unmuted. Remove IGNORE_BACKEND directive or add it to whitelist for that.");
@@ -14636,10 +14686,15 @@ public class LightAnalysisModeTestGenerated extends AbstractLightAnalysisModeTes
         @TestMetadata("augmentedAssignmentsAndIncrements.kt")
         public void ignoreAugmentedAssignmentsAndIncrements() throws Exception {
             String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/properties/augmentedAssignmentsAndIncrements.kt");
+            if (KotlinTestUtils.RUN_IGNORED_TESTS_AS_REGULAR) {
+                doTest(fileName);
+                return;
+            }
             try {
                 doTest(fileName);
             }
             catch (Throwable ignore) {
+                ignore.printStackTrace();
                 return;
             }
             throw new AssertionError("Looks like this test can be unmuted. Remove IGNORE_BACKEND directive or add it to whitelist for that.");

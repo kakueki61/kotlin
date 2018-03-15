@@ -162,10 +162,15 @@ public class IrBlackBoxCodegenTestGenerated extends AbstractIrBlackBoxCodegenTes
         @TestMetadata("wrongAnnotationArgumentInCtor.kt")
         public void testWrongAnnotationArgumentInCtor() throws Exception {
             String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/annotations/wrongAnnotationArgumentInCtor.kt");
+            if (KotlinTestUtils.RUN_IGNORED_TESTS_AS_REGULAR) {
+                doTest(fileName);
+                return;
+            }
             try {
                 doTest(fileName);
             }
             catch (Throwable ignore) {
+                ignore.printStackTrace();
                 return;
             }
             throw new AssertionError("Looks like this test can be unmuted. Remove IGNORE_BACKEND directive or add it to whitelist for that.");
@@ -6464,10 +6469,15 @@ public class IrBlackBoxCodegenTestGenerated extends AbstractIrBlackBoxCodegenTes
             @TestMetadata("inlineMultiModuleOverride.kt")
             public void testInlineMultiModuleOverride() throws Exception {
                 String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/coroutines/multiModule/inlineMultiModuleOverride.kt");
+                if (KotlinTestUtils.RUN_IGNORED_TESTS_AS_REGULAR) {
+                    doTest(fileName);
+                    return;
+                }
                 try {
                     doTest(fileName);
                 }
                 catch (Throwable ignore) {
+                    ignore.printStackTrace();
                     return;
                 }
                 throw new AssertionError("Looks like this test can be unmuted. Remove IGNORE_BACKEND directive or add it to whitelist for that.");
@@ -7185,10 +7195,15 @@ public class IrBlackBoxCodegenTestGenerated extends AbstractIrBlackBoxCodegenTes
         @TestMetadata("implementedByFake.kt")
         public void testImplementedByFake() throws Exception {
             String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/defaultArguments/implementedByFake.kt");
+            if (KotlinTestUtils.RUN_IGNORED_TESTS_AS_REGULAR) {
+                doTest(fileName);
+                return;
+            }
             try {
                 doTest(fileName);
             }
             catch (Throwable ignore) {
+                ignore.printStackTrace();
                 return;
             }
             throw new AssertionError("Looks like this test can be unmuted. Remove IGNORE_BACKEND directive or add it to whitelist for that.");
@@ -7197,10 +7212,15 @@ public class IrBlackBoxCodegenTestGenerated extends AbstractIrBlackBoxCodegenTes
         @TestMetadata("implementedByFake2.kt")
         public void testImplementedByFake2() throws Exception {
             String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/defaultArguments/implementedByFake2.kt");
+            if (KotlinTestUtils.RUN_IGNORED_TESTS_AS_REGULAR) {
+                doTest(fileName);
+                return;
+            }
             try {
                 doTest(fileName);
             }
             catch (Throwable ignore) {
+                ignore.printStackTrace();
                 return;
             }
             throw new AssertionError("Looks like this test can be unmuted. Remove IGNORE_BACKEND directive or add it to whitelist for that.");
@@ -7209,10 +7229,15 @@ public class IrBlackBoxCodegenTestGenerated extends AbstractIrBlackBoxCodegenTes
         @TestMetadata("implementedByFake3.kt")
         public void testImplementedByFake3() throws Exception {
             String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/defaultArguments/implementedByFake3.kt");
+            if (KotlinTestUtils.RUN_IGNORED_TESTS_AS_REGULAR) {
+                doTest(fileName);
+                return;
+            }
             try {
                 doTest(fileName);
             }
             catch (Throwable ignore) {
+                ignore.printStackTrace();
                 return;
             }
             throw new AssertionError("Looks like this test can be unmuted. Remove IGNORE_BACKEND directive or add it to whitelist for that.");
@@ -7659,10 +7684,15 @@ public class IrBlackBoxCodegenTestGenerated extends AbstractIrBlackBoxCodegenTes
         @TestMetadata("genericDelegateUncheckedCast2.kt")
         public void testGenericDelegateUncheckedCast2() throws Exception {
             String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/delegatedProperty/genericDelegateUncheckedCast2.kt");
+            if (KotlinTestUtils.RUN_IGNORED_TESTS_AS_REGULAR) {
+                doTest(fileName);
+                return;
+            }
             try {
                 doTest(fileName);
             }
             catch (Throwable ignore) {
+                ignore.printStackTrace();
                 return;
             }
             throw new AssertionError("Looks like this test can be unmuted. Remove IGNORE_BACKEND directive or add it to whitelist for that.");
@@ -8058,10 +8088,15 @@ public class IrBlackBoxCodegenTestGenerated extends AbstractIrBlackBoxCodegenTes
         @TestMetadata("withDefaultParameters.kt")
         public void testWithDefaultParameters() throws Exception {
             String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/delegation/withDefaultParameters.kt");
+            if (KotlinTestUtils.RUN_IGNORED_TESTS_AS_REGULAR) {
+                doTest(fileName);
+                return;
+            }
             try {
                 doTest(fileName);
             }
             catch (Throwable ignore) {
+                ignore.printStackTrace();
                 return;
             }
             throw new AssertionError("Looks like this test can be unmuted. Remove IGNORE_BACKEND directive or add it to whitelist for that.");
@@ -12147,10 +12182,15 @@ public class IrBlackBoxCodegenTestGenerated extends AbstractIrBlackBoxCodegenTes
         @TestMetadata("closureOfInnerLocalClass.kt")
         public void testClosureOfInnerLocalClass() throws Exception {
             String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/localClasses/closureOfInnerLocalClass.kt");
+            if (KotlinTestUtils.RUN_IGNORED_TESTS_AS_REGULAR) {
+                doTest(fileName);
+                return;
+            }
             try {
                 doTest(fileName);
             }
             catch (Throwable ignore) {
+                ignore.printStackTrace();
                 return;
             }
             throw new AssertionError("Looks like this test can be unmuted. Remove IGNORE_BACKEND directive or add it to whitelist for that.");
@@ -12165,10 +12205,15 @@ public class IrBlackBoxCodegenTestGenerated extends AbstractIrBlackBoxCodegenTes
         @TestMetadata("closureWithSelfInstantiation.kt")
         public void testClosureWithSelfInstantiation() throws Exception {
             String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/localClasses/closureWithSelfInstantiation.kt");
+            if (KotlinTestUtils.RUN_IGNORED_TESTS_AS_REGULAR) {
+                doTest(fileName);
+                return;
+            }
             try {
                 doTest(fileName);
             }
             catch (Throwable ignore) {
+                ignore.printStackTrace();
                 return;
             }
             throw new AssertionError("Looks like this test can be unmuted. Remove IGNORE_BACKEND directive or add it to whitelist for that.");
@@ -12327,10 +12372,15 @@ public class IrBlackBoxCodegenTestGenerated extends AbstractIrBlackBoxCodegenTes
         @TestMetadata("subclassingExtensionReceiverClass.kt")
         public void testSubclassingExtensionReceiverClass() throws Exception {
             String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/localClasses/subclassingExtensionReceiverClass.kt");
+            if (KotlinTestUtils.RUN_IGNORED_TESTS_AS_REGULAR) {
+                doTest(fileName);
+                return;
+            }
             try {
                 doTest(fileName);
             }
             catch (Throwable ignore) {
+                ignore.printStackTrace();
                 return;
             }
             throw new AssertionError("Looks like this test can be unmuted. Remove IGNORE_BACKEND directive or add it to whitelist for that.");
@@ -14652,10 +14702,15 @@ public class IrBlackBoxCodegenTestGenerated extends AbstractIrBlackBoxCodegenTes
         @TestMetadata("augmentedAssignmentsAndIncrements.kt")
         public void testAugmentedAssignmentsAndIncrements() throws Exception {
             String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/properties/augmentedAssignmentsAndIncrements.kt");
+            if (KotlinTestUtils.RUN_IGNORED_TESTS_AS_REGULAR) {
+                doTest(fileName);
+                return;
+            }
             try {
                 doTest(fileName);
             }
             catch (Throwable ignore) {
+                ignore.printStackTrace();
                 return;
             }
             throw new AssertionError("Looks like this test can be unmuted. Remove IGNORE_BACKEND directive or add it to whitelist for that.");

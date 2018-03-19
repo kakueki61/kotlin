@@ -10,14 +10,14 @@ import org.jetbrains.kotlin.builtins.DefaultBuiltIns
 import org.jetbrains.kotlin.fir.FirSession
 import org.jetbrains.kotlin.fir.expressions.FirAnnotationCall
 import org.jetbrains.kotlin.fir.types.FirResolvedType
-import org.jetbrains.kotlin.types.KotlinType
+import org.jetbrains.kotlin.fir.types.NewKotlinType
 
 class FirUnitType(
     override val session: FirSession,
     override val psi: PsiElement?
 ) : FirResolvedType {
-    override val type: KotlinType
-        get() = DefaultBuiltIns.Instance.unitType
+    override val type: NewKotlinType = TODO()
+        //get() = DefaultBuiltIns.Instance.unitType
 
     override val isNullable = false
 

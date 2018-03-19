@@ -6,15 +6,17 @@
 package org.jetbrains.kotlin.fir.resolve
 
 import org.jetbrains.kotlin.fir.FirSession
+import org.jetbrains.kotlin.fir.descriptors.NewClassifierDescriptor
 import org.jetbrains.kotlin.fir.service
-import org.jetbrains.kotlin.fir.types.FirType
+import org.jetbrains.kotlin.fir.types.FirQualifierPart
 import org.jetbrains.kotlin.fir.types.NewKotlinType
 
-interface FirTypeResolver {
+interface FirQualifierResolver {
 
-    fun resolveType(type: FirType): NewKotlinType
+    fun resolveType(parts: List<FirQualifierPart>): NewKotlinType?
 
     companion object {
-        fun getInstance(session: FirSession): FirTypeResolver = session.service()
+        fun getInstance(session: FirSession): FirQualifierResolver = session.service()
     }
 }
+
